@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{5CCA68ED-F89A-4FDA-8915-5EA1F622BB4F}|Default">
+  <MonoDevelop.Ide.ItemProperties.Console PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Console/Program.cs">
+    <Files>
+      <File FileName="Business/Abstract/ICarService.cs" />
+      <File FileName="Business/Concrete/CarManager.cs" />
+      <File FileName="Console/Program.cs" Line="16" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RentACar" expanded="True">
+            <Node name="Business" expanded="True">
+              <Node name="Abstract" expanded="True" />
+            </Node>
+            <Node name="Console" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+            <Node name="DataAccess" expanded="True" />
+            <Node name="Entities" expanded="True">
+              <Node name="Concrete" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
