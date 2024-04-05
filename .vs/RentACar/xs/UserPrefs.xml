@@ -1,24 +1,38 @@
 ﻿<Properties StartupConfiguration="{5CCA68ED-F89A-4FDA-8915-5EA1F622BB4F}|Default">
-  <MonoDevelop.Ide.ItemProperties.Console PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Console/Program.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Business/Concrete/CarManager.cs">
     <Files>
-      <File FileName="Business/Abstract/ICarService.cs" />
-      <File FileName="Business/Concrete/CarManager.cs" />
-      <File FileName="Console/Program.cs" Line="16" Column="2" />
+      <File FileName="Entities/Concrete/Car.cs" />
+      <File FileName="DataAccess/Concrete/EntityFramework/RentACarContext.cs" Line="1" Column="1" />
+      <File FileName="DataAccess/Concrete/EntityFramework/EfCarDal.cs" />
+      <File FileName="Business/Abstract/ICarService.cs" Line="12" Column="6" />
+      <File FileName="Business/Concrete/CarManager.cs" Line="26" Column="28" />
+      <File FileName="DataAccess/Abstract/ICarDal.cs" />
+      <File FileName="Console/Program.cs" />
+      <File FileName="DataAccess/Abstract/IEntityRepository.cs" Line="13" Column="18" />
+      <File FileName="DataAccess/Abstract/IColorDal.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RentACar" expanded="True">
-            <Node name="Business" expanded="True">
+            <Node name="Business">
               <Node name="Abstract" expanded="True" />
+              <Node name="Concrete" expanded="True">
+                <Node name="CarManager.cs" selected="True" />
+              </Node>
             </Node>
-            <Node name="Console" expanded="True">
-              <Node name="Program.cs" selected="True" />
+            <Node name="Console" expanded="True" />
+            <Node name="DataAccess" expanded="True">
+              <Node name="Abstract" expanded="True" />
+              <Node name="Concrete" expanded="True">
+                <Node name="EntityFramework" expanded="True" />
+              </Node>
             </Node>
-            <Node name="DataAccess" expanded="True" />
             <Node name="Entities" expanded="True">
               <Node name="Concrete" expanded="True" />
             </Node>
@@ -27,8 +41,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Console PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
