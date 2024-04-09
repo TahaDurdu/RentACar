@@ -1,20 +1,17 @@
 ﻿<Properties StartupConfiguration="{5CCA68ED-F89A-4FDA-8915-5EA1F622BB4F}|Default">
+  <MonoDevelop.Ide.ItemProperties.Console PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Business/Concrete/CarManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Console/Program.cs">
     <Files>
-      <File FileName="Entities/Concrete/Car.cs" />
-      <File FileName="DataAccess/Concrete/EntityFramework/RentACarContext.cs" Line="1" Column="1" />
-      <File FileName="DataAccess/Concrete/EntityFramework/EfCarDal.cs" />
-      <File FileName="Business/Abstract/ICarService.cs" Line="12" Column="6" />
-      <File FileName="Business/Concrete/CarManager.cs" Line="26" Column="28" />
-      <File FileName="DataAccess/Abstract/ICarDal.cs" />
-      <File FileName="Console/Program.cs" />
-      <File FileName="DataAccess/Abstract/IEntityRepository.cs" Line="13" Column="18" />
-      <File FileName="DataAccess/Abstract/IColorDal.cs" />
+      <File FileName="Business/Concrete/CarManager.cs" Line="19" Column="14" />
+      <File FileName="DataAccess/Concrete/EntityFramework/EfCarDal.cs" Line="1" Column="1" />
+      <File FileName="DataAccess/Abstract/IEntityRepository.cs" Line="11" Column="26" />
+      <File FileName="Business/Abstract/ICarService.cs" Line="1" Column="1" />
+      <File FileName="Console/Program.cs" Line="14" Column="53" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,25 +19,21 @@
           <Node name="RentACar" expanded="True">
             <Node name="Business">
               <Node name="Abstract" expanded="True" />
-              <Node name="Concrete" expanded="True">
-                <Node name="CarManager.cs" selected="True" />
-              </Node>
+              <Node name="Concrete" expanded="True" />
             </Node>
-            <Node name="Console" expanded="True" />
+            <Node name="Console">
+              <Node name="Program.cs" selected="True" />
+            </Node>
             <Node name="DataAccess" expanded="True">
               <Node name="Abstract" expanded="True" />
               <Node name="Concrete" expanded="True">
                 <Node name="EntityFramework" expanded="True" />
               </Node>
             </Node>
-            <Node name="Entities" expanded="True">
-              <Node name="Concrete" expanded="True" />
-            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Console PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

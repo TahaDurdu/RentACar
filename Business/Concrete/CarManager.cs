@@ -13,23 +13,23 @@ namespace Business.Concrete
             _carDal = carDal;
         }
 
-        public void AddCarRules(Car car)
-        {
+        public void Add(Car car)
+        { 
+                if (car.CarName.Length <= 2)
+                {
+                    Console.WriteLine("Araba ismini 2 karakterden fazla gireceksin");
 
-            if (car.CarName.Length > 2)
-            {
-                Console.WriteLine("Araba ismini 2 karakterden fazla gireceksin");
+                }
+                else if (car.DailyPrice <= 0)
+                {
+                    Console.WriteLine("Arabanın günlük fiyatı 0 dan büyük olacak");
+                }
+                else
+                {
+                    _carDal.Add(car);
+                    Console.WriteLine("Araba Başarıyla Eklendi");
 
-            }
-            else if(((int)car.DailyPrice)>0)
-            {
-                Console.WriteLine("Arabanın günlük fiyatı 0dan büyük olacak");
-            }
-            else
-            {
-                Console.WriteLine("Araba Başarıyla Eklendi");
-            }
-
+                }
         }
 
         public List<Car> GetAll()
