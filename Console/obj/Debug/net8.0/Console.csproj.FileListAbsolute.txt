@@ -68,3 +68,5 @@
 /Users/tahadurdu/Documents/RentACar/Console/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
 /Users/tahadurdu/Documents/RentACar/Console/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
 /Users/tahadurdu/Documents/RentACar/Console/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+/Users/tahadurdu/Documents/RentACar/Console/bin/Debug/net8.0/Core.dll
+/Users/tahadurdu/Documents/RentACar/Console/bin/Debug/net8.0/Core.pdb

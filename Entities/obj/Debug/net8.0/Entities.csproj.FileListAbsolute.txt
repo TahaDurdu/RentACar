@@ -10,3 +10,7 @@
 /Users/tahadurdu/Documents/RentACar/Entities/obj/Debug/net8.0/Entities.pdb
 /Users/tahadurdu/Documents/RentACar/Entities/obj/Debug/net8.0/ref/Entities.dll
 /Users/tahadurdu/Documents/RentACar/Entities/obj/Debug/net8.0/Entities.sourcelink.json
+/Users/tahadurdu/Documents/RentACar/Entities/bin/Debug/net8.0/Core.dll
+/Users/tahadurdu/Documents/RentACar/Entities/bin/Debug/net8.0/Core.pdb
+/Users/tahadurdu/Documents/RentACar/Entities/obj/Debug/net8.0/Entities.csproj.AssemblyReference.cache
+/Users/tahadurdu/Documents/RentACar/Entities/obj/Debug/net8.0/Entities.csproj.Up2Date

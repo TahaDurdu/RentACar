@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Entities.Abstaract
+namespace Core.Entities
 {
 	public interface IEntity
 	{

@@ -1,17 +1,17 @@
 ﻿<Properties StartupConfiguration="{5CCA68ED-F89A-4FDA-8915-5EA1F622BB4F}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Console PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Console/Program.cs">
     <Files>
-      <File FileName="Business/Concrete/CarManager.cs" Line="19" Column="14" />
-      <File FileName="DataAccess/Concrete/EntityFramework/EfCarDal.cs" Line="1" Column="1" />
-      <File FileName="DataAccess/Abstract/IEntityRepository.cs" Line="11" Column="26" />
-      <File FileName="Business/Abstract/ICarService.cs" Line="1" Column="1" />
-      <File FileName="Console/Program.cs" Line="14" Column="53" />
+      <File FileName="DataAccess/Abstract/ICarDal.cs" />
+      <File FileName="Entities/Concrete/Brand.cs" />
+      <File FileName="Entities/Concrete/Car.cs" />
+      <File FileName="Entities/Concrete/Color.cs" />
+      <File FileName="DataAccess/Concrete/EntityFramework/EfCarDal.cs" Line="21" Column="52" />
+      <File FileName="Console/Program.cs" Line="14" Column="24" />
+      <File FileName="Business/Concrete/CarManager.cs" Line="40" Column="1" />
+      <File FileName="Business/Abstract/ICarService.cs" Line="15" Column="24" />
+      <File FileName="DataAccess/Concrete/InMemory/InMemoryDal.cs" Line="9" Column="28" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -24,16 +24,24 @@
             <Node name="Console">
               <Node name="Program.cs" selected="True" />
             </Node>
-            <Node name="DataAccess" expanded="True">
+            <Node name="DataAccess">
               <Node name="Abstract" expanded="True" />
               <Node name="Concrete" expanded="True">
                 <Node name="EntityFramework" expanded="True" />
               </Node>
+            </Node>
+            <Node name="Entities" expanded="True">
+              <Node name="Concrete" expanded="True" />
+              <Node name="DTOs" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

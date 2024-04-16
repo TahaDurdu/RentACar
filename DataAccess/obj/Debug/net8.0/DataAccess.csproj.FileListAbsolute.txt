@@ -16,3 +16,5 @@
 /Users/tahadurdu/Documents/RentACar/DataAccess/obj/Debug/net8.0/DataAccess.csproj.Up2Date
 /Users/tahadurdu/Documents/RentACar/DataAccess/bin/Debug/net8.0/DataAccess.runtimeconfig.json
 /Users/tahadurdu/Documents/RentACar/DataAccess/obj/Debug/net8.0/DataAccess.genruntimeconfig.cache
+/Users/tahadurdu/Documents/RentACar/DataAccess/bin/Debug/net8.0/Core.dll
+/Users/tahadurdu/Documents/RentACar/DataAccess/bin/Debug/net8.0/Core.pdb

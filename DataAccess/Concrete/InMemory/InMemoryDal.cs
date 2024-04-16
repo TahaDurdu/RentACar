@@ -2,6 +2,7 @@
 using System.Linq.Expressions;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 
 namespace DataAccess.Concrete.InMemory
 {
@@ -25,6 +26,11 @@ namespace DataAccess.Concrete.InMemory
         public void Add(Car car)
         {
             cars.Add(car);
+        }
+
+        public List<CarDetailDto> CarDetailDtos()
+        {
+            throw new NotImplementedException();
         }
 
         public void Delete(Car car)
