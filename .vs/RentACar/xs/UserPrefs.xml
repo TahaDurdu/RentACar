@@ -1,17 +1,26 @@
 ﻿<Properties StartupConfiguration="{5CCA68ED-F89A-4FDA-8915-5EA1F622BB4F}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Console PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="Console/Program.cs">
     <Files>
-      <File FileName="DataAccess/Abstract/ICarDal.cs" />
-      <File FileName="Entities/Concrete/Brand.cs" />
-      <File FileName="Entities/Concrete/Car.cs" />
-      <File FileName="Entities/Concrete/Color.cs" />
-      <File FileName="DataAccess/Concrete/EntityFramework/EfCarDal.cs" Line="21" Column="52" />
-      <File FileName="Console/Program.cs" Line="14" Column="24" />
-      <File FileName="Business/Concrete/CarManager.cs" Line="40" Column="1" />
-      <File FileName="Business/Abstract/ICarService.cs" Line="15" Column="24" />
-      <File FileName="DataAccess/Concrete/InMemory/InMemoryDal.cs" Line="9" Column="28" />
+      <File FileName="Core/Utilities/Results/IResult.cs" />
+      <File FileName="Core/Utilities/Results/Result.cs" />
+      <File FileName="Core/Utilities/Results/SuccessResult.cs" />
+      <File FileName="Core/Utilities/Results/ErrorResult.cs" />
+      <File FileName="Business/Concrete/BrandManager.cs" Line="32" Column="10" />
+      <File FileName="Business/Concrete/CarManager.cs" Line="61" Column="62" />
+      <File FileName="Business/Constans/Messages.cs" Line="10" Column="43" />
+      <File FileName="Business/Abstract/ICarService.cs" Line="10" Column="33" />
+      <File FileName="Business/Abstract/IBrandService.cs" Line="9" Column="27" />
+      <File FileName="Business/Abstract/IColorService.cs" Line="9" Column="33" />
+      <File FileName="Business/Concrete/ColorManager.cs" Line="37" Column="10" />
+      <File FileName="Core/Utilities/Results/IDataResult.cs" />
+      <File FileName="Core/Utilities/Results/DataResult.cs" />
+      <File FileName="Core/Utilities/Results/SuccessDataResult.cs" Line="15" Column="1" />
+      <File FileName="Core/Utilities/Results/ErrorDataResult.cs" Line="16" Column="1" />
+      <File FileName="Console/Program.cs" Line="44" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,28 +29,17 @@
             <Node name="Business">
               <Node name="Abstract" expanded="True" />
               <Node name="Concrete" expanded="True" />
+              <Node name="Constans" expanded="True" />
             </Node>
-            <Node name="Console">
-              <Node name="Program.cs" selected="True" />
-            </Node>
-            <Node name="DataAccess">
-              <Node name="Abstract" expanded="True" />
-              <Node name="Concrete" expanded="True">
-                <Node name="EntityFramework" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="Entities" expanded="True">
-              <Node name="Concrete" expanded="True" />
-              <Node name="DTOs" expanded="True" />
+            <Node name="Core">
+              <Node name="Utilities" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Console PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

@@ -19,8 +19,12 @@ internal class Program
     {
         CarManager car1 = new CarManager(new EfCarDal());
 
-        foreach (var c in car1.carDetailDtos())
+        var result = car1.carDetailDtos();
+
+        Console.WriteLine(result.Message);
+        foreach (var c in result.Data)
         {
+            
             Console.WriteLine(c.CarName + " - " + c.BrandName + " - " + c.ColorName + " - " + c.DailyPrice);
         }
     }
@@ -32,7 +36,7 @@ internal class Program
 
         car.Add(new Car() { BrandId = 1, ColorId = 1, CarName = "a", ModelYear = 2000, DailyPrice = 200, Description = "Deneme" });
 
-        foreach (var car1 in car.GetAll())
+        foreach (var car1 in car.GetAll().Data)
         {
             Console.WriteLine(car1.Description);
         }
