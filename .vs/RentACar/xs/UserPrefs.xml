@@ -1,26 +1,29 @@
 ﻿<Properties StartupConfiguration="{5CCA68ED-F89A-4FDA-8915-5EA1F622BB4F}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Console PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="Console/Program.cs">
     <Files>
-      <File FileName="Core/Utilities/Results/IResult.cs" />
-      <File FileName="Core/Utilities/Results/Result.cs" />
-      <File FileName="Core/Utilities/Results/SuccessResult.cs" />
-      <File FileName="Core/Utilities/Results/ErrorResult.cs" />
-      <File FileName="Business/Concrete/BrandManager.cs" Line="32" Column="10" />
-      <File FileName="Business/Concrete/CarManager.cs" Line="61" Column="62" />
-      <File FileName="Business/Constans/Messages.cs" Line="10" Column="43" />
-      <File FileName="Business/Abstract/ICarService.cs" Line="10" Column="33" />
-      <File FileName="Business/Abstract/IBrandService.cs" Line="9" Column="27" />
-      <File FileName="Business/Abstract/IColorService.cs" Line="9" Column="33" />
-      <File FileName="Business/Concrete/ColorManager.cs" Line="37" Column="10" />
-      <File FileName="Core/Utilities/Results/IDataResult.cs" />
-      <File FileName="Core/Utilities/Results/DataResult.cs" />
-      <File FileName="Core/Utilities/Results/SuccessDataResult.cs" Line="15" Column="1" />
-      <File FileName="Core/Utilities/Results/ErrorDataResult.cs" Line="16" Column="1" />
-      <File FileName="Console/Program.cs" Line="44" Column="2" />
+      <File FileName="Business/Abstract/ICarService.cs" />
+      <File FileName="Business/Abstract/IRentalService.cs" />
+      <File FileName="Business/Abstract/ICustomerService.cs" />
+      <File FileName="Business/Concrete/CarManager.cs" />
+      <File FileName="Entities/Concrete/User.cs" />
+      <File FileName="Entities/Concrete/Customer.cs" />
+      <File FileName="Business/Concrete/CustomerManager.cs" />
+      <File FileName="Business/Constans/Messages.cs" Line="38" Column="66" />
+      <File FileName="Console/Program.cs" Line="26" Column="68" />
+      <File FileName="DataAccess/Abstract/IUserDal.cs" />
+      <File FileName="DataAccess/Concrete/EntityFramework/EfCustomerDal.cs" />
+      <File FileName="Business/Concrete/RentalManager.cs" Line="21" Column="10" />
+      <File FileName="DataAccess/Abstract/IRentalDal.cs" />
+      <File FileName="DataAccess/Concrete/EntityFramework/EfRentalDal.cs" Line="9" Column="6" />
+      <File FileName="Core/DataAccess/EntitiyFramework/EfEntityRepositoryBase.cs" />
+      <File FileName="Entities/Concrete/Rental.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -31,15 +34,23 @@
               <Node name="Concrete" expanded="True" />
               <Node name="Constans" expanded="True" />
             </Node>
-            <Node name="Core">
-              <Node name="Utilities" expanded="True" />
+            <Node name="Console">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+            <Node name="Core" expanded="True">
+              <Node name="DataAccess" expanded="True">
+                <Node name="EntitiyFramework" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="DataAccess" expanded="True">
+              <Node name="Abstract" expanded="True" />
+              <Node name="Concrete" expanded="True">
+                <Node name="EntityFramework" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Console PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
