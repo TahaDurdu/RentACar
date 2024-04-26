@@ -19,13 +19,17 @@ namespace Business.Concrete
 
         public IResult Add(Rental rental)
         {
-            if (rental.ReturnDate<DateTime.Now)
+            bool isCarAvailable = !(_rentalDal.GetAll(r => r.CarId == rental.CarId &&  r.ReturnDate==null ).Any());
+
+            if (isCarAvailable)
             {
-                _rentalDal.Add(rental);
-                return new SuccessResult(Messages.RentalAdd);
+                return new ErrorResult(Messages.CarNotDelivered);
+               
 
             }
-            return new ErrorResult(Messages.CarNotDelivered);
+            _rentalDal.Add(rental);
+            return new SuccessResult(Messages.RentalAdd);
+
 
 
         }

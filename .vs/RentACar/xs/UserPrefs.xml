@@ -1,52 +1,24 @@
-﻿<Properties StartupConfiguration="{5CCA68ED-F89A-4FDA-8915-5EA1F622BB4F}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+﻿<Properties StartupConfiguration="{FEE98CC3-7A79-4F51-87A5-F4B818F83577}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Console PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Console/Program.cs">
-    <Files>
-      <File FileName="Business/Abstract/ICarService.cs" />
-      <File FileName="Business/Abstract/IRentalService.cs" />
-      <File FileName="Business/Abstract/ICustomerService.cs" />
-      <File FileName="Business/Concrete/CarManager.cs" />
-      <File FileName="Entities/Concrete/User.cs" />
-      <File FileName="Entities/Concrete/Customer.cs" />
-      <File FileName="Business/Concrete/CustomerManager.cs" />
-      <File FileName="Business/Constans/Messages.cs" Line="38" Column="66" />
-      <File FileName="Console/Program.cs" Line="26" Column="68" />
-      <File FileName="DataAccess/Abstract/IUserDal.cs" />
-      <File FileName="DataAccess/Concrete/EntityFramework/EfCustomerDal.cs" />
-      <File FileName="Business/Concrete/RentalManager.cs" Line="21" Column="10" />
-      <File FileName="DataAccess/Abstract/IRentalDal.cs" />
-      <File FileName="DataAccess/Concrete/EntityFramework/EfRentalDal.cs" Line="9" Column="6" />
-      <File FileName="Core/DataAccess/EntitiyFramework/EfEntityRepositoryBase.cs" />
-      <File FileName="Entities/Concrete/Rental.cs" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RentACar" expanded="True">
-            <Node name="Business">
-              <Node name="Abstract" expanded="True" />
-              <Node name="Concrete" expanded="True" />
-              <Node name="Constans" expanded="True" />
-            </Node>
-            <Node name="Console">
-              <Node name="Program.cs" selected="True" />
-            </Node>
-            <Node name="Core" expanded="True">
-              <Node name="DataAccess" expanded="True">
-                <Node name="EntitiyFramework" expanded="True" />
+            <Node name="WebApi">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True">
+                  <Node name="Swashbuckle.AspNetCore" selected="True" />
+                </Node>
               </Node>
-            </Node>
-            <Node name="DataAccess" expanded="True">
-              <Node name="Abstract" expanded="True" />
-              <Node name="Concrete" expanded="True">
-                <Node name="EntityFramework" expanded="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
             </Node>
           </Node>
         </State>
