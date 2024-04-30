@@ -1,28 +1,32 @@
 ﻿<Properties StartupConfiguration="{FEE98CC3-7A79-4F51-87A5-F4B818F83577}|https">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Console PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Business/DependencyResolvers/Autofac/AutofacBusinessModule.cs">
+    <Files>
+      <File FileName="Business/DependencyResolvers/Autofac/AutofacBusinessModule.cs" Line="33" Column="2" />
+      <File FileName="WebApi/Program.cs" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RentACar" expanded="True">
-            <Node name="WebApi">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True">
-                  <Node name="Swashbuckle.AspNetCore" selected="True" />
+            <Node name="Business">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="DependencyResolvers" expanded="True">
+                <Node name="Autofac" expanded="True">
+                  <Node name="AutofacBusinessModule.cs" selected="True" />
                 </Node>
               </Node>
-              <Node name="Controllers" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Console PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

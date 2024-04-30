@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "PaJyVflEwVem9Zu2be4N4acU2vWELZqMXiBviyWXcJ0lUnBBW84qUfxqxl8330tRyDOAYZwAQIbqVxE6Wu1/Gw==",
+  "dgSpecHash": "ofF0Zb4tUpbbjoclMzNMCqgS/8jszAg4REV2b1trNlZv7atZ9N0ygF7/DNpT1LDg2ZMueY8/IafapaiHzbAgDw==",
   "success": true,
   "projectFilePath": "/Users/tahadurdu/Documents/RentACar/Console/Console.csproj",
   "expectedPackageFiles": [
+    "/Users/tahadurdu/.nuget/packages/autofac/8.0.0/autofac.8.0.0.nupkg.sha512",
+    "/Users/tahadurdu/.nuget/packages/autofac.extensions.dependencyinjection/9.0.0/autofac.extensions.dependencyinjection.9.0.0.nupkg.sha512",
     "/Users/tahadurdu/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/tahadurdu/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
     "/Users/tahadurdu/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
@@ -37,7 +39,7 @@
     "/Users/tahadurdu/.nuget/packages/microsoft.sqlserver.server/1.0.0/microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "/Users/tahadurdu/.nuget/packages/microsoft.win32.systemevents/6.0.0/microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "/Users/tahadurdu/.nuget/packages/system.configuration.configurationmanager/6.0.1/system.configuration.configurationmanager.6.0.1.nupkg.sha512",
-    "/Users/tahadurdu/.nuget/packages/system.diagnostics.diagnosticsource/6.0.1/system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
+    "/Users/tahadurdu/.nuget/packages/system.diagnostics.diagnosticsource/7.0.2/system.diagnostics.diagnosticsource.7.0.2.nupkg.sha512",
     "/Users/tahadurdu/.nuget/packages/system.drawing.common/6.0.0/system.drawing.common.6.0.0.nupkg.sha512",
     "/Users/tahadurdu/.nuget/packages/system.formats.asn1/5.0.0/system.formats.asn1.5.0.0.nupkg.sha512",
     "/Users/tahadurdu/.nuget/packages/system.identitymodel.tokens.jwt/6.35.0/system.identitymodel.tokens.jwt.6.35.0.nupkg.sha512",
