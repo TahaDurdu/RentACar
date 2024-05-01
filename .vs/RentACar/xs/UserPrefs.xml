@@ -3,23 +3,28 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Business/DependencyResolvers/Autofac/AutofacBusinessModule.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Core/CrossCuttingConcerns/Validation/ValidationTool.cs">
     <Files>
-      <File FileName="Business/DependencyResolvers/Autofac/AutofacBusinessModule.cs" Line="33" Column="2" />
-      <File FileName="WebApi/Program.cs" />
+      <File FileName="Business/ValidationRules/FluentValidation/CarValidator.cs" />
+      <File FileName="Core/CrossCuttingConcerns/Validation/ValidationTool.cs" Line="22" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RentACar" expanded="True">
-            <Node name="Business">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="DependencyResolvers" expanded="True">
-                <Node name="Autofac" expanded="True">
-                  <Node name="AutofacBusinessModule.cs" selected="True" />
+            <Node name="Business" expanded="True">
+              <Node name="ValidationRules" expanded="True">
+                <Node name="FluentValidation" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Core">
+              <Node name="CrossCuttingConcerns" expanded="True">
+                <Node name="Validation" expanded="True">
+                  <Node name="ValidationTool.cs" selected="True" />
                 </Node>
               </Node>
             </Node>
+            <Node name="WebApi" expanded="True" />
           </Node>
         </State>
       </Pad>

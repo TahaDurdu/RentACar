@@ -12,6 +12,8 @@
     <None Remove="Constans\" />
     <None Remove="DependencyResolvers\" />
     <None Remove="DependencyResolvers\Autofac\" />
+    <None Remove="ValidationRules\" />
+    <None Remove="ValidationRules\FluentValidation\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstract\" />
@@ -19,6 +21,8 @@
     <Folder Include="Constans\" />
     <Folder Include="DependencyResolvers\" />
     <Folder Include="DependencyResolvers\Autofac\" />
+    <Folder Include="ValidationRules\" />
+    <Folder Include="ValidationRules\FluentValidation\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entities\Entities.csproj" />
@@ -27,5 +31,6 @@
   <ItemGroup>
     <PackageReference Include="Autofac" Version="8.0.0" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.9.1" />
   </ItemGroup>
 </Project>
