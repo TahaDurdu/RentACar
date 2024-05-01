@@ -272,3 +272,6 @@
 /Users/tahadurdu/Documents/RentACar/WebApi/bin/Debug/net8.0/Entities.pdb
 /Users/tahadurdu/Documents/RentACar/WebApi/bin/Debug/net8.0/Autofac.dll
 /Users/tahadurdu/Documents/RentACar/WebApi/bin/Debug/net8.0/Autofac.Extensions.DependencyInjection.dll
+/Users/tahadurdu/Documents/RentACar/WebApi/bin/Debug/net8.0/Autofac.Extras.DynamicProxy.dll
+/Users/tahadurdu/Documents/RentACar/WebApi/bin/Debug/net8.0/Castle.Core.dll
+/Users/tahadurdu/Documents/RentACar/WebApi/bin/Debug/net8.0/FluentValidation.dll

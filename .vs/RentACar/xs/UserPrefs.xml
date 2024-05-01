@@ -5,19 +5,35 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="Core/CrossCuttingConcerns/Validation/ValidationTool.cs">
     <Files>
-      <File FileName="Business/ValidationRules/FluentValidation/CarValidator.cs" />
-      <File FileName="Core/CrossCuttingConcerns/Validation/ValidationTool.cs" Line="22" Column="1" />
+      <File FileName="Core/Aspects/Autofac/Validation/ValidationAspect.cs" Line="29" Column="50" />
+      <File FileName="Core/CrossCuttingConcerns/Validation/ValidationTool.cs" Line="16" Column="1" />
+      <File FileName="Business/Concrete/CarManager.cs" Line="28" Column="1" />
+      <File FileName="Business/ValidationRules/FluentValidation/CarValidator.cs" Line="20" Column="1" />
+      <File FileName="Business/DependencyResolvers/Autofac/AutofacBusinessModule.cs" Line="39" Column="37" />
+      <File FileName="Business/ValidationRules/FluentValidation/BrandValidator.cs" Line="13" Column="1" />
+      <File FileName="Business/Concrete/BrandManager.cs" Line="32" Column="34" />
+      <File FileName="Business/ValidationRules/FluentValidation/ColorValidator.cs" Line="12" Column="47" />
+      <File FileName="Business/Concrete/ColorManager.cs" Line="24" Column="34" />
+      <File FileName="Business/ValidationRules/FluentValidation/UserValidator.cs" Line="12" Column="41" />
+      <File FileName="Business/Concrete/UserManager.cs" Line="18" Column="45" />
+      <File FileName="Business/Concrete/RentalManager.cs" Line="14" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RentACar" expanded="True">
-            <Node name="Business" expanded="True">
-              <Node name="ValidationRules" expanded="True">
+            <Node name="Business">
+              <Node name="Concrete" expanded="True" />
+              <Node name="ValidationRules">
                 <Node name="FluentValidation" expanded="True" />
               </Node>
             </Node>
-            <Node name="Core">
+            <Node name="Core" expanded="True">
+              <Node name="Aspects" expanded="True">
+                <Node name="Autofac" expanded="True">
+                  <Node name="Validation" expanded="True" />
+                </Node>
+              </Node>
               <Node name="CrossCuttingConcerns" expanded="True">
                 <Node name="Validation" expanded="True">
                   <Node name="ValidationTool.cs" selected="True" />

@@ -14,6 +14,10 @@
     <None Remove="Utilities\Results\" />
     <None Remove="CrossCuttingConcerns\" />
     <None Remove="CrossCuttingConcerns\Validation\" />
+    <None Remove="Utilities\Interceptors\" />
+    <None Remove="Aspects\" />
+    <None Remove="Aspects\Autofac\" />
+    <None Remove="Aspects\Autofac\Validation\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
@@ -23,6 +27,10 @@
     <Folder Include="Utilities\Results\" />
     <Folder Include="CrossCuttingConcerns\" />
     <Folder Include="CrossCuttingConcerns\Validation\" />
+    <Folder Include="Utilities\Interceptors\" />
+    <Folder Include="Aspects\" />
+    <Folder Include="Aspects\Autofac\" />
+    <Folder Include="Aspects\Autofac\Validation\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
