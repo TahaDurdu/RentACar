@@ -1,12 +1,20 @@
 {
   "Version": 1,
-  "Hash": "w0A799yzxsCWTV6V0ltTfhiqU4abf206Qv5/yzv73gg=",
+  "Hash": "Fgc2c01tVQlM2uZ3G0pcPo41GlO73H/8hYkc3WQd8r8=",
   "Source": "WebApi",
   "BasePath": "_content/WebApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApi/wwwroot",
+      "Source": "WebApi",
+      "ContentRoot": "/Users/tahadurdu/Documents/RentACar/WebApi/wwwroot/",
+      "BasePath": "_content/WebApi",
+      "Pattern": "**"
+    }
+  ],
   "Assets": [
     {
       "Identity": "/Users/tahadurdu/.nuget/packages/microsoft.aspnetcore.components.quickgrid/8.0.4/staticwebassets/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
@@ -64,6 +72,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/tahadurdu/Documents/RentACar/WebApi/obj/Debug/net8.0/scopedcss/bundle/WebApi.styles.css"
+    },
+    {
+      "Identity": "/Users/tahadurdu/Documents/RentACar/WebApi/wwwroot/DefaultImage.jpeg",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/tahadurdu/Documents/RentACar/WebApi/wwwroot/",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "DefaultImage.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/DefaultImage.jpeg"
+    },
+    {
+      "Identity": "/Users/tahadurdu/Documents/RentACar/WebApi/wwwroot/Uploads/Images/arackiralama.jpeg",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/tahadurdu/Documents/RentACar/WebApi/wwwroot/",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "Uploads/Images/arackiralama.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Uploads/Images/arackiralama.jpeg"
     }
   ]
 }
