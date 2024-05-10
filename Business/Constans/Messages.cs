@@ -1,4 +1,6 @@
 ﻿using System;
+using Core.Entities.Concrete;
+
 namespace Business.Constans
 {
     public static class Messages
@@ -35,7 +37,16 @@ namespace Business.Constans
         public static string RentalDelete = "Kiralama Silindi";
         public static string CarNotDelivered = "Araç Teslim edilmedi";
         public static string RentalAdd = "Kiralama Yapıldı";
-        internal static string RentalNotAvaılable = "Eklenemedi";
+        public static string RentalNotAvaılable = "Eklenemedi";
+        public static string EmailAvailable = "Email Var";
+        public static string RoleWasBrought = "Rol Getirildi";
+        public static string UserRegistered = "Kullanıcı Kayıtlı";
+        public static string UserNotFound = "Kullanıcı Yok";
+        public static string PasswordError = "Şifre Hatalı";
+        public static string SuccessfulLogin = "Giriş Başarılı";
+        public static string UserAlreadyExists = "Kullanıcı zaten var";
+        public static string AccessTokenCreated = "Token Oluşturuldu";
+        public static string AuthorizationDenied = "Yetkiniz Yok";
     }
 }
 

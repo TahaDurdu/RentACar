@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using Business.Concrete;
+using Core.Entities.Concrete;
 using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
 using Entities.Concrete;
@@ -59,11 +60,11 @@ internal class Program
     {
         UserManager userManager = new UserManager(new EfUserDal());
 
-        userManager.Delete(new User { UserId = 2, FirstName = "Taha", LastName = "Durdu", Email = "tahadurdu2588@gmail.com", Password = "12345Taha" });
+        userManager.Delete(new User { Id = 2, FirstName = "Taha", LastName = "Durdu", Email = "tahadurdu2588@gmail.com",  });
 
         foreach (var user in userManager.GetAll().Data)
         {
-            Console.WriteLine(user.FirstName + " - " + user.LastName + " - " + user.Email + " - " + user.Password);
+            Console.WriteLine(user.FirstName + " - " + user.LastName + " - " + user.Email);
 
         }
     }

@@ -1,42 +1,52 @@
 ﻿<Properties StartupConfiguration="{FEE98CC3-7A79-4F51-87A5-F4B818F83577}|https">
-  <MonoDevelop.Ide.ItemProperties.Console PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebApi/Program.cs">
+  <MonoDevelop.Ide.ItemProperties.Console PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Business/Concrete/AuthManager.cs">
     <Files>
-      <File FileName="Business/DependencyResolvers/Autofac/AutofacBusinessModule.cs" Line="22" Column="50" />
-      <File FileName="WebApi/Program.cs" Line="38" Column="22" />
+      <File FileName="Core/Utilities/Security/JWT/JwtHelper.cs" Line="14" Column="3" />
+      <File FileName="WebApi/appsettings.json" />
+      <File FileName="Core/Utilities/Security/JWT/ITokenHelper.cs" />
+      <File FileName="Core/Utilities/Security/JWT/TokenOptions.cs" />
+      <File FileName="Core/Utilities/Security/JWT/AccessToken.cs" />
+      <File FileName="Core/Utilities/Security/Hashing/HashingHelper.cs" />
+      <File FileName="Core/Utilities/Security/Encryption/SecurityKeyHelper.cs" />
+      <File FileName="Core/Utilities/Security/Encryption/SigningCredentialsHelper.cs" />
+      <File FileName="Core/DataAccess/EntitiyFramework/EfEntityRepositoryBase.cs" Line="37" Column="1" />
+      <File FileName="Business/Concrete/UserManager.cs" Line="44" Column="13" />
+      <File FileName="Business/Concrete/AuthManager.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RentACar" expanded="True">
-            <Node name="Business">
-              <Node name="DependencyResolvers" expanded="True">
+            <Node name="Business" expanded="True">
+              <Node name="BusinessAspect" expanded="True">
                 <Node name="Autofac" expanded="True" />
               </Node>
+              <Node name="Concrete" expanded="True">
+                <Node name="AuthManager.cs" selected="True" />
+              </Node>
+              <Node name="Constans" expanded="True" />
             </Node>
             <Node name="Core" expanded="True">
-              <Node name="Entities" expanded="True" />
-              <Node name="Helpers" expanded="True">
-                <Node name="FileHalper" expanded="True" />
+              <Node name="DataAccess" expanded="True">
+                <Node name="EntitiyFramework" expanded="True" />
               </Node>
               <Node name="Utilities" expanded="True">
-                <Node name="Business" expanded="True" />
+                <Node name="Security" expanded="True">
+                  <Node name="JWT" expanded="True" />
+                </Node>
               </Node>
-            </Node>
-            <Node name="WebApi">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

@@ -4,10 +4,11 @@ using Business.Abstract;
 using Business.Constans;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Validation;
+using Core.Entities.Concrate;
+using Core.Entities.Concrete;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
-using Entities.Concrete;
 
 namespace Business.Concrete
 {
@@ -19,7 +20,7 @@ namespace Business.Concrete
         {
             _userDal= userDal ;
         }
-        [ValidationAspect(typeof(UserValidator))]
+       
         public IResult Add(User user)
         {
             _userDal.Add(user);
@@ -38,6 +39,17 @@ namespace Business.Concrete
             return new SuccessDataResult<List<User>>(_userDal.GetAll(),Messages.UsersSuccessListed);
         }
 
+        public IDataResult<User> GetByMail(string email)
+        {
+            
+            return new SuccessDataResult<User>(_userDal.Get(p => p.Email == email),Messages.EmailAvailable);
+        }
+
+        public IDataResult<List<OperationClaim>> GetClaims(User user)
+        {
+            return new SuccessDataResult<List<OperationClaim>>(_userDal.GetClaims(user), Messages.RoleWasBrought);
+
+        }
 
         public IResult Update(User user)
         {

@@ -275,3 +275,5 @@
 /Users/tahadurdu/Documents/RentACar/WebApi/bin/Debug/net8.0/Autofac.Extras.DynamicProxy.dll
 /Users/tahadurdu/Documents/RentACar/WebApi/bin/Debug/net8.0/Castle.Core.dll
 /Users/tahadurdu/Documents/RentACar/WebApi/bin/Debug/net8.0/FluentValidation.dll
+/Users/tahadurdu/Documents/RentACar/WebApi/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/tahadurdu/Documents/RentACar/WebApi/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Binder.dll
