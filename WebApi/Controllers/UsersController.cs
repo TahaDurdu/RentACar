@@ -76,7 +76,7 @@ namespace WebApi.Controllers
             return BadRequest(result);
         }
 
-        [HttpGet("getclaims")]
+        [HttpPost("getclaims")]
         public IActionResult GetClaims(User user)
         {
             var result = _userService.GetClaims(user);

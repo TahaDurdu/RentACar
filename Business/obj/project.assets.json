@@ -3256,7 +3256,8 @@
       "Autofac.Extensions.DependencyInjection >= 9.0.0",
       "DataAccess >= 1.0.0",
       "Entities >= 1.0.0",
-      "FluentValidation >= 11.9.1"
+      "FluentValidation >= 11.9.1",
+      "Microsoft.AspNetCore.Http >= 2.2.2"
     ]
   },
   "packageFolders": {
@@ -3319,6 +3320,10 @@
           "FluentValidation": {
             "target": "Package",
             "version": "[11.9.1, )"
+          },
+          "Microsoft.AspNetCore.Http": {
+            "target": "Package",
+            "version": "[2.2.2, )"
           }
         },
         "imports": [

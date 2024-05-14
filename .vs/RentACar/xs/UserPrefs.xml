@@ -1,52 +1,60 @@
 ﻿<Properties StartupConfiguration="{FEE98CC3-7A79-4F51-87A5-F4B818F83577}|https">
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/tahadurdu/Documents/RentACar/Core/Utilities/Security/JWT/JwtHelper.cs" relfile="Core/Utilities/Security/JWT/JwtHelper.cs" line="25" column="1" />
+      <Breakpoint file="/Users/tahadurdu/Documents/RentACar/Core/Utilities/Security/JWT/JwtHelper.cs" relfile="Core/Utilities/Security/JWT/JwtHelper.cs" line="42" column="1" />
+      <Breakpoint file="/Users/tahadurdu/Documents/RentACar/Core/Utilities/Security/JWT/JwtHelper.cs" relfile="Core/Utilities/Security/JWT/JwtHelper.cs" line="56" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Console PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Business/Concrete/AuthManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Business/BusinessAspect/Autofac/SecuredOperation.cs">
     <Files>
-      <File FileName="Core/Utilities/Security/JWT/JwtHelper.cs" Line="14" Column="3" />
       <File FileName="WebApi/appsettings.json" />
-      <File FileName="Core/Utilities/Security/JWT/ITokenHelper.cs" />
-      <File FileName="Core/Utilities/Security/JWT/TokenOptions.cs" />
+      <File FileName="Core/Utilities/Security/JWT/JwtHelper.cs" Line="57" Column="1" />
+      <File FileName="WebApi/Controllers/UsersController.cs" Line="1" Column="1" />
+      <File FileName="WebApi/Program.cs" Line="87" Column="1" />
+      <File FileName="Business/Concrete/AuthManager.cs" />
+      <File FileName="WebApi/Controllers/AuthController.cs" />
       <File FileName="Core/Utilities/Security/JWT/AccessToken.cs" />
-      <File FileName="Core/Utilities/Security/Hashing/HashingHelper.cs" />
-      <File FileName="Core/Utilities/Security/Encryption/SecurityKeyHelper.cs" />
-      <File FileName="Core/Utilities/Security/Encryption/SigningCredentialsHelper.cs" />
-      <File FileName="Core/DataAccess/EntitiyFramework/EfEntityRepositoryBase.cs" Line="37" Column="1" />
-      <File FileName="Business/Concrete/UserManager.cs" Line="44" Column="13" />
-      <File FileName="Business/Concrete/AuthManager.cs" Line="1" Column="1" />
+      <File FileName="Business/BusinessAspect/Autofac/SecuredOperation.cs" Line="20" Column="31" />
+      <File FileName="Core/Utilities/Interceptors/AspectInterceptorSelector.cs" />
+      <File FileName="Core/Utilities/Interceptors/MethodInterception.cs" />
+      <File FileName="Business/Concrete/CarManager.cs" Line="25" Column="1" />
+      <File FileName="Business/Concrete/ColorManager.cs" Line="23" Column="28" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RentACar" expanded="True">
-            <Node name="Business" expanded="True">
+            <Node name="Business">
               <Node name="BusinessAspect" expanded="True">
-                <Node name="Autofac" expanded="True" />
+                <Node name="Autofac" expanded="True">
+                  <Node name="SecuredOperation.cs" selected="True" />
+                </Node>
               </Node>
-              <Node name="Concrete" expanded="True">
-                <Node name="AuthManager.cs" selected="True" />
-              </Node>
-              <Node name="Constans" expanded="True" />
+              <Node name="Concrete" expanded="True" />
             </Node>
             <Node name="Core" expanded="True">
-              <Node name="DataAccess" expanded="True">
-                <Node name="EntitiyFramework" expanded="True" />
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
               </Node>
               <Node name="Utilities" expanded="True">
+                <Node name="Interceptors" expanded="True" />
                 <Node name="Security" expanded="True">
                   <Node name="JWT" expanded="True" />
                 </Node>
               </Node>
+            </Node>
+            <Node name="WebApi">
+              <Node name="Controllers" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Console PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

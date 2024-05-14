@@ -20,11 +20,11 @@ namespace Business.Concrete
         }
 
         [ValidationAspect(typeof(CarValidator))]
-        [SecuredOperation("car.add,admin")]
+
+        [SecuredOperation("admin")]
 
         public IResult Add(Car car)
         { 
-               
             _carDal.Add(car);
             return new SuccessResult(Messages.CarAddedSuccess);
 
