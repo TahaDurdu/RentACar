@@ -28,8 +28,7 @@ namespace Core.Helpers.FileHalper
             if (file.Length > 0)
             {
                 if (!Directory.Exists(root))
-                {                           
-                                           
+                {                                           
                     Directory.CreateDirectory(root);
                 }
                 string extension = Path.GetExtension(file.FileName);

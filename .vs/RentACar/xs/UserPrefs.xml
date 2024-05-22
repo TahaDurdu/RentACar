@@ -1,60 +1,74 @@
 ﻿<Properties StartupConfiguration="{FEE98CC3-7A79-4F51-87A5-F4B818F83577}|https">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/tahadurdu/Documents/RentACar/Core/Utilities/Security/JWT/JwtHelper.cs" relfile="Core/Utilities/Security/JWT/JwtHelper.cs" line="25" column="1" />
-      <Breakpoint file="/Users/tahadurdu/Documents/RentACar/Core/Utilities/Security/JWT/JwtHelper.cs" relfile="Core/Utilities/Security/JWT/JwtHelper.cs" line="42" column="1" />
-      <Breakpoint file="/Users/tahadurdu/Documents/RentACar/Core/Utilities/Security/JWT/JwtHelper.cs" relfile="Core/Utilities/Security/JWT/JwtHelper.cs" line="56" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Business/BusinessAspect/Autofac/SecuredOperation.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Business/Concrete/CarImageManager.cs">
     <Files>
-      <File FileName="WebApi/appsettings.json" />
-      <File FileName="Core/Utilities/Security/JWT/JwtHelper.cs" Line="57" Column="1" />
-      <File FileName="WebApi/Controllers/UsersController.cs" Line="1" Column="1" />
-      <File FileName="WebApi/Program.cs" Line="87" Column="1" />
-      <File FileName="Business/Concrete/AuthManager.cs" />
+      <File FileName="WebApi/Program.cs" Line="12" Column="35" />
+      <File FileName="Business/Concrete/ColorManager.cs" />
+      <File FileName="Business/BusinessAspect/Autofac/SecuredOperation.cs" />
+      <File FileName="WebApi/Controllers/ColorsController.cs" />
       <File FileName="WebApi/Controllers/AuthController.cs" />
-      <File FileName="Core/Utilities/Security/JWT/AccessToken.cs" />
-      <File FileName="Business/BusinessAspect/Autofac/SecuredOperation.cs" Line="20" Column="31" />
+      <File FileName="Core/Utilities/IoC/ServiceTool.cs" />
+      <File FileName="Core/Utilities/Security/JWT/JwtHelper.cs" />
+      <File FileName="Core/Utilities/Security/Encryption/SecurityKeyHelper.cs" />
       <File FileName="Core/Utilities/Interceptors/AspectInterceptorSelector.cs" />
       <File FileName="Core/Utilities/Interceptors/MethodInterception.cs" />
-      <File FileName="Business/Concrete/CarManager.cs" Line="25" Column="1" />
-      <File FileName="Business/Concrete/ColorManager.cs" Line="23" Column="28" />
+      <File FileName="Core/Utilities/Extensions/ClaimsPrincipalExtensions.cs" />
+      <File FileName="WebApi/appsettings.json" />
+      <File FileName="Core/GuidHelperr/GuidHelper.cs" />
+      <File FileName="Core/Helpers/FileHalper/FileHelperManager.cs" Line="23" Column="36" />
+      <File FileName="Core/Helpers/FileHalper/IFileHelper.cs" Line="1" Column="1" />
+      <File FileName="Business/Concrete/CarImageManager.cs" Line="31" Column="14" />
+      <File FileName="DataAccess/Concrete/EntityFramework/EfCarImageDal.cs" />
+      <File FileName="DataAccess/Abstract/ICarDal.cs" />
+      <File FileName="DataAccess/Abstract/ICarImageDal.cs" />
+      <File FileName="Business/Constans/PathConstants.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RentACar" expanded="True">
-            <Node name="Business">
+            <Node name="Business" expanded="True">
               <Node name="BusinessAspect" expanded="True">
-                <Node name="Autofac" expanded="True">
-                  <Node name="SecuredOperation.cs" selected="True" />
-                </Node>
+                <Node name="Autofac" expanded="True" />
               </Node>
-              <Node name="Concrete" expanded="True" />
+              <Node name="Concrete" expanded="True">
+                <Node name="CarImageManager.cs" selected="True" />
+              </Node>
+              <Node name="Constans" expanded="True" />
             </Node>
             <Node name="Core" expanded="True">
+              <Node name="CrossCuttingConcerns" expanded="True">
+                <Node name="Validation" expanded="True" />
+              </Node>
+              <Node name="DataAccess" expanded="True">
+                <Node name="EntitiyFramework" expanded="True" />
+              </Node>
+              <Node name="DependencyResolvers" expanded="True" />
+              <Node name="Entities" expanded="True" />
+              <Node name="GuidHelperr" expanded="True" />
+              <Node name="Helpers" expanded="True">
+                <Node name="FileHalper" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="DataAccess" expanded="True" />
+            <Node name="Entities" expanded="True" />
+            <Node name="WebApi" expanded="True">
               <Node name="Dependencies" expanded="True">
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
-              <Node name="Utilities" expanded="True">
-                <Node name="Interceptors" expanded="True" />
-                <Node name="Security" expanded="True">
-                  <Node name="JWT" expanded="True" />
-                </Node>
-              </Node>
-            </Node>
-            <Node name="WebApi">
-              <Node name="Controllers" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/tahadurdu/Documents/RentACar/Core/Utilities/Extensions/ClaimsPrincipalExtensions.cs" relfile="Core/Utilities/Extensions/ClaimsPrincipalExtensions.cs" line="16" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Console PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

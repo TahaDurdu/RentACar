@@ -1,5 +1,6 @@
 using Business.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,20 +16,19 @@ namespace WebApi.Controllers
             _carImageService = carImageService;
         }
         [HttpPost("add")]
-        public IActionResult Add([FromForm] IFormFile file, [FromForm] CarImage carImage)
+        public IActionResult Add([FromForm] CarImageAddDto carImageAddDto)
         {
-            var result = _carImageService.Add(file, carImage);
+            var result = _carImageService.Add(carImageAddDto.FormFile,carImageAddDto.CarId);
             if (result.Success)
             {
                 return Ok(result);
             }
             return BadRequest(result);
         }
-        [HttpPost("delete")]
-        public IActionResult Delete(CarImage carImage)
+        [HttpPost("delete/{id}")]
+        public IActionResult Delete([FromRoute] int id)
         {
-            var carDeleteImage = _carImageService.GetByImageId(carImage.Id).Data;
-            var result = _carImageService.Delete(carDeleteImage);
+            var result = _carImageService.Delete(id);
             if (result.Success)
             {
                 return Ok(result);
@@ -36,9 +36,9 @@ namespace WebApi.Controllers
             return BadRequest(result);
         }
         [HttpPost("update")]
-        public IActionResult Update([FromForm] IFormFile file, [FromForm] CarImage carImage)
+        public IActionResult Update([FromForm] CarImageUpdateDto carImageUpdateDto)
         {
-            var result = _carImageService.Update(file, carImage);
+            var result = _carImageService.Update(carImageUpdateDto.FormFile, carImageUpdateDto.Id);
             if (result.Success)
             {
                 return Ok(result);

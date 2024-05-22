@@ -8,47 +8,67 @@ using DataAccess.Abstract;
 using Entities.Concrete;
 using Microsoft.AspNetCore.Http;
 
+
 namespace Business.Concrete
 {
 	public class CarImageManager:ICarImageService
 	{
         ICarImageDal _carImageDal;
         IFileHelper _fileHelper;
+        ICarDal _carDal;
 
-        public CarImageManager(ICarImageDal carImageDal, IFileHelper fileHelper)
+        public CarImageManager(ICarImageDal carImageDal, IFileHelper fileHelper,ICarDal carDal)
         {
             _carImageDal = carImageDal;
             _fileHelper = fileHelper;
+            _carDal = carDal;
         }
-        public IResult Add(IFormFile file, CarImage carImage)
+        public IResult Add(IFormFile file, int carId)
         {
-            IResult result = BusinessRules.Run(CheckIfCarImageLimit(carImage.CarId));
+            IResult result = BusinessRules.Run(CheckCarById(carId),CheckIfCarImageLimit(carId));
+           
             if (result != null)
             {
                 return result;
             }
+            var carImage = new CarImage();
+            carImage.CarId = carId;
             carImage.ImagePath = _fileHelper.Upload(file, PathConstants.ImagesPath);
             carImage.Date = DateTime.Now;
             _carImageDal.Add(carImage);
             return new SuccessResult("Resim başarıyla yüklendi");
         }
 
-        public IResult Delete(CarImage carImage)
+        public IResult Delete(int id)
         {
-            _fileHelper.Delete(PathConstants.ImagesPath + carImage.ImagePath);
-            _carImageDal.Delete(carImage);
+            var result = BusinessRules.Run(CheckCarImageById(id));
+            if (result != null)
+            {
+                return result;
+            }
+            var dataResult = _carImageDal.Get(c => c.Id == id);
+
+            _fileHelper.Delete(PathConstants.ImagesPath + dataResult.ImagePath);
+            _carImageDal.Delete(dataResult);
             return new SuccessResult();
         }
-        public IResult Update(IFormFile file, CarImage carImage)
+        public IResult Update(IFormFile file, int id)
         {
-            carImage.ImagePath = _fileHelper.Update(file, PathConstants.ImagesPath + carImage.ImagePath, PathConstants.ImagesPath);
-            _carImageDal.Update(carImage);
+            var result = BusinessRules.Run(CheckCarImageById(id));
+            if (result != null)
+            {
+                return result;
+            }
+            var dataResult = _carImageDal.Get(c => c.Id == id);
+
+            dataResult.ImagePath = _fileHelper.Update(file, PathConstants.ImagesPath + dataResult.ImagePath, PathConstants.ImagesPath);
+            _carImageDal.Update(dataResult);
             return new SuccessResult();
         }
 
         public IDataResult<List<CarImage>> GetByCarId(int carId)
         {
-            var result = BusinessRules.Run(CheckCarImage(carId));
+            var result = BusinessRules.Run(CheckCarImageByCarId(carId));
             if (result != null)
             {
                 return new ErrorDataResult<List<CarImage>>(GetDefaultImage(carId).Data);
@@ -82,15 +102,34 @@ namespace Business.Concrete
 
             return new SuccessDataResult<List<CarImage>>(carImage);
         }
-        private IResult CheckCarImage(int carId)
+        private IResult CheckCarImageByCarId(int carId)
         {
             var result = _carImageDal.GetAll(c => c.CarId == carId).Count;
             if (result > 0)
             {
                 return new SuccessResult();
             }
-            return new ErrorResult();
+            return new ErrorResult("Car Image Not Found");
         }
+        private IResult CheckCarImageById(int id)
+        {
+            var result = _carImageDal.Get(c => c.Id == id);
+            if (result is not null)
+            {
+                return new SuccessResult();
+            }
+            return new ErrorResult("Car Image Not Found");
+        }
+        private IResult CheckCarById(int id)
+        {
+            var result = _carDal.Get(c => c.CarId == id);
+            if (result is not null)
+            {
+                return new SuccessResult();
+            }
+            return new ErrorResult("Car Not Found");
+        }
+
     }
 }
 

@@ -2,10 +2,11 @@
 using System.Linq.Expressions;
 using Core.DataAccess.EntitiyFramework;
 using DataAccess.Abstract;
-using DataAccess.Migrations;
 using Entities.Concrete;
 using Entities.DTOs;
 using Microsoft.EntityFrameworkCore;
+using DataAccess.Concrete.EntityFramework;
+
 
 namespace DataAccess.Concrete.EntityFramework
 {

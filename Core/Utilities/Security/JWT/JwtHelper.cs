@@ -10,8 +10,8 @@ using System.IdentityModel.Tokens.Jwt;
 
 namespace Core.Utilities.Security.JWT
 {
-	public class JwtHelper:ITokenHelper
-	{
+    public partial class JwtHelper : ITokenHelper
+    {
         public IConfiguration Configuration { get; }
         private TokenOptions _tokenOptions;
         private DateTime _accessTokenExpiration;

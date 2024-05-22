@@ -1,23 +1,15 @@
 ﻿using Autofac;
 using Autofac.Extensions.DependencyInjection;
-using Business.Abstract;
-using Business.Concrete;
 using Business.DependencyResolvers.Autofac;
 using Core.DependencyResolvers;
 using Core.Utilities.IoC;
 using Core.Utilities.Security.Encryption;
 using Core.Utilities.Security.JWT;
-using DataAccess.Abstract;
-using DataAccess.Concrete.EntityFramework;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Core.Utilities.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
-
-
-
-
 
 builder.Services.AddControllers();
 
@@ -47,11 +39,7 @@ builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 var tokenOptions = builder.Configuration.GetSection("TokenOptions").Get<TokenOptions>();
 
 
-builder.Services.AddAuthentication(options => {
-    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
-})
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
                     options.TokenValidationParameters = new TokenValidationParameters
@@ -63,6 +51,7 @@ builder.Services.AddAuthentication(options => {
                         ValidAudience = tokenOptions.Audience,
                         ValidateIssuerSigningKey = true,
                         IssuerSigningKey = SecurityKeyHelper.CreateSecurityKey(tokenOptions.SecurityKey)
+
                     };
                 });
 
@@ -82,9 +71,16 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+
+
 app.UseCors(builder => builder.WithOrigins("http://localhost:3000").AllowAnyHeader());
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
+
+app.UseStaticFiles();
+
+app.UseRouting();
 
 app.UseAuthentication();
 
@@ -93,4 +89,3 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
-

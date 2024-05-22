@@ -7,9 +7,12 @@ namespace Business.Abstract
 {
 	public interface ICarImageService
 	{
-        IResult Add(IFormFile file, CarImage carImage);
-        IResult Delete(CarImage carImage);
-        IResult Update(IFormFile file, CarImage carImage);
+
+        //TODO :  Carimages yerine DTO oluşturulacak 
+
+        IResult Add(IFormFile file, int carId);
+        IResult Delete(int id);
+        IResult Update(IFormFile file,int id);
 
         IDataResult<List<CarImage>> GetAll();
         IDataResult<List<CarImage>> GetByCarId(int carId);

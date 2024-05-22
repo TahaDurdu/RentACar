@@ -3,8 +3,8 @@ using System.Security.Claims;
 
 namespace Core.Utilities.Extensions
 {
-	public static class ClaimsPrincipalExtensions
-	{
+    public static class ClaimsPrincipalExtensions
+    {
         public static List<string> Claims(this ClaimsPrincipal claimsPrincipal, string claimType)
         {
             var result = claimsPrincipal?.FindAll(claimType)?.Select(x => x.Value).ToList();
