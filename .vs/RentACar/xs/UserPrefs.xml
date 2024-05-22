@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{FEE98CC3-7A79-4F51-87A5-F4B818F83577}|https">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Business/Concrete/CarImageManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Core/DependencyResolvers/CoreModule.cs">
     <Files>
-      <File FileName="WebApi/Program.cs" Line="12" Column="35" />
+      <File FileName="WebApi/Program.cs" Line="79" Column="3" />
       <File FileName="Business/Concrete/ColorManager.cs" />
-      <File FileName="Business/BusinessAspect/Autofac/SecuredOperation.cs" />
+      <File FileName="Business/BusinessAspect/Autofac/SecuredOperation.cs" Line="19" Column="23" />
       <File FileName="WebApi/Controllers/ColorsController.cs" />
       <File FileName="WebApi/Controllers/AuthController.cs" />
       <File FileName="Core/Utilities/IoC/ServiceTool.cs" />
@@ -13,29 +13,31 @@
       <File FileName="Core/Utilities/Security/Encryption/SecurityKeyHelper.cs" />
       <File FileName="Core/Utilities/Interceptors/AspectInterceptorSelector.cs" />
       <File FileName="Core/Utilities/Interceptors/MethodInterception.cs" />
-      <File FileName="Core/Utilities/Extensions/ClaimsPrincipalExtensions.cs" />
+      <File FileName="Core/Utilities/Extensions/ClaimsPrincipalExtensions.cs" Line="17" Column="1" />
       <File FileName="WebApi/appsettings.json" />
       <File FileName="Core/GuidHelperr/GuidHelper.cs" />
-      <File FileName="Core/Helpers/FileHalper/FileHelperManager.cs" Line="23" Column="36" />
-      <File FileName="Core/Helpers/FileHalper/IFileHelper.cs" Line="1" Column="1" />
+      <File FileName="Core/Helpers/FileHalper/FileHelperManager.cs" />
+      <File FileName="Core/Helpers/FileHalper/IFileHelper.cs" />
       <File FileName="Business/Concrete/CarImageManager.cs" Line="31" Column="14" />
       <File FileName="DataAccess/Concrete/EntityFramework/EfCarImageDal.cs" />
       <File FileName="DataAccess/Abstract/ICarDal.cs" />
       <File FileName="DataAccess/Abstract/ICarImageDal.cs" />
       <File FileName="Business/Constans/PathConstants.cs" />
+      <File FileName="DataAccess/Concrete/EntityFramework/EfCarDal.cs" Line="7" Column="37" />
+      <File FileName="Core/DataAccess/EntitiyFramework/EfEntityRepositoryBase.cs" Line="1" Column="1" />
+      <File FileName="Core/Entities/Concrate/User.cs" Line="1" Column="1" />
+      <File FileName="Core/Entities/Concrate/OperationClaim.cs" Line="1" Column="1" />
+      <File FileName="Core/Entities/Concrate/UserOperationClaim.cs" Line="1" Column="1" />
+      <File FileName="Core/DependencyResolvers/CoreModule.cs" Line="23" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="RentACar" expanded="True">
+          <Node name="RentACar">
             <Node name="Business" expanded="True">
               <Node name="BusinessAspect" expanded="True">
                 <Node name="Autofac" expanded="True" />
               </Node>
-              <Node name="Concrete" expanded="True">
-                <Node name="CarImageManager.cs" selected="True" />
-              </Node>
-              <Node name="Constans" expanded="True" />
             </Node>
             <Node name="Core" expanded="True">
               <Node name="CrossCuttingConcerns" expanded="True">
@@ -44,20 +46,16 @@
               <Node name="DataAccess" expanded="True">
                 <Node name="EntitiyFramework" expanded="True" />
               </Node>
-              <Node name="DependencyResolvers" expanded="True" />
-              <Node name="Entities" expanded="True" />
-              <Node name="GuidHelperr" expanded="True" />
-              <Node name="Helpers" expanded="True">
-                <Node name="FileHalper" expanded="True" />
+              <Node name="Utilities" expanded="True">
+                <Node name="Extensions" expanded="True" />
               </Node>
             </Node>
-            <Node name="DataAccess" expanded="True" />
-            <Node name="Entities" expanded="True" />
-            <Node name="WebApi" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
+            <Node name="DataAccess" expanded="True">
+              <Node name="Concrete" expanded="True">
+                <Node name="EntityFramework" expanded="True" />
               </Node>
             </Node>
+            <Node name="WebApi" expanded="True" />
           </Node>
         </State>
       </Pad>
